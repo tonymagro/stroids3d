@@ -1,0 +1,6 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "Stroids3d";
+CFBundleShortVersionString = "Stroids3d version 0.1";
+CFBundleGetInfoString = "Stroids3d version 0.1, Copyright 2003 Tony Magro.";
+NSHumanReadableCopyright = "Copyright 2003 Tony Magro.";

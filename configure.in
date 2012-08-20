@@ -1,0 +1,33 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(scommon/s_common.h)
+
+dnl Checks for programs.
+AC_PROG_CC
+
+dnl Checks for libraries.
+dnl Replace `main' with a function in -lGL:
+AC_CHECK_LIB(GL, glColor4f)
+dnl Replace `main' with a function in -lGLU:
+AC_CHECK_LIB(GLU, gluPerspective)
+dnl Replace `main' with a function in -lSDL_mixer:
+AC_CHECK_LIB(SDL, SDL_Init)
+AC_CHECK_LIB(SDL_mixer, Mix_OpenAudio)
+dnl Replace `main' with a function in -libs:
+dnl AC_CHECK_LIB(ibs, main)
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_CHECK_HEADERS(fcntl.h sys/ioctl.h sys/time.h unistd.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_C_CONST
+AC_HEADER_TIME
+
+dnl Checks for library functions.
+AC_PROG_GCC_TRADITIONAL
+AC_FUNC_MEMCMP
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(gethostname select socket strerror strstr)
+
+
+AC_OUTPUT(Makefile)

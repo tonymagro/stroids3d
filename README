@@ -1,0 +1,55 @@
+Stroids readme
+Linux/Unix
+You must have SDL and SDL_mixer libraries installed.
+
+Win32
+You must have SDL and SDL_mixer libraries installed.
+DirectX 8.0 or higher for force feedback.
+
+Nate Griswold - didn't actually do anything
+Tony Magro
+John Bethencourt
+Can you handle it?
+download game data files at:http://www.upl.cs.wisc.edu/~anthony/stroids3d_data.tar.gz
+
+or
+
+Run one of the following scripts to automatically download and install the game data
+getstroid3ddata.bat - for win32
+getstroid3ddata.sh  - for linux
+
+Keys:
+W	= Forward
+S	= Backward
+A	= Left
+D	= Right
+C	= Camera View
+G	= Release/Grab Mouse
+J	= Show collision spheres
+ESC = Return to Menu
+KP9 = Kill 
+GameKeyPad +/- = Change Game Speed
+
+Debug:
+O/P - change world size
+k/l	- increase world number
+KP 1 - Kill YourSelf
+KP 2 - Kill All Stroids
+
+
+Copyright (C) 2002  Anthony Magro
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+

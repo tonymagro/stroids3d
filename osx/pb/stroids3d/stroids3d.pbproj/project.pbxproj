@@ -1,0 +1,879 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 38;
+	objects = {
+		080E96DDFE201D6D7F000001 = {
+			children = (
+				F5A47A9D01A0482F01D3D55B,
+				F5A47A9E01A0483001D3D55B,
+			);
+			isa = PBXGroup;
+			name = Classes;
+			refType = 4;
+		};
+		089C165CFE840E0CC02AAC07 = {
+			children = (
+				089C165DFE840E0CC02AAC07,
+			);
+			isa = PBXVariantGroup;
+			name = InfoPlist.strings;
+			refType = 4;
+		};
+		089C165DFE840E0CC02AAC07 = {
+			fileEncoding = 10;
+			isa = PBXFileReference;
+			name = English;
+			path = English.lproj/InfoPlist.strings;
+			refType = 4;
+		};
+		089C165EFE840E0CC02AAC07 = {
+			fileRef = 089C165CFE840E0CC02AAC07;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//080
+//081
+//082
+//083
+//084
+//0D0
+//0D1
+//0D2
+//0D3
+//0D4
+		0D60659B047537C40D692D6D = {
+			children = (
+				0D60659C047537C40D692D6D,
+				0D60659D047537C40D692D6D,
+				0D60659E047537C40D692D6D,
+				0D60659F047537C40D692D6D,
+				0D6065A0047537C40D692D6D,
+				0D6065A1047537C40D692D6D,
+				0D6065A2047537C40D692D6D,
+				0D6065A3047537C40D692D6D,
+				0D6065A4047537C40D692D6D,
+				0D6065A5047537C40D692D6D,
+				0D6065A6047537C40D692D6D,
+				0D6065A7047537C40D692D6D,
+				0D6065A8047537C40D692D6D,
+				0D6065A9047537C40D692D6D,
+				0D6065AA047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = game;
+			path = /automount/home/anthony/stroids3d/game;
+			refType = 0;
+		};
+		0D60659C047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = e_spacestation.c;
+			refType = 4;
+		};
+		0D60659D047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_highscore.c;
+			refType = 4;
+		};
+		0D60659E047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_hud.c;
+			refType = 4;
+		};
+		0D60659F047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_intro.c;
+			refType = 4;
+		};
+		0D6065A0047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_keys.c;
+			refType = 4;
+		};
+		0D6065A1047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_limbo.c;
+			refType = 4;
+		};
+		0D6065A2047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_main.c;
+			refType = 4;
+		};
+		0D6065A3047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_menu.c;
+			refType = 4;
+		};
+		0D6065A4047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_network.c;
+			refType = 4;
+		};
+		0D6065A5047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_particles.c;
+			refType = 4;
+		};
+		0D6065A6047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_player.c;
+			refType = 4;
+		};
+		0D6065A7047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_projectile.c;
+			refType = 4;
+		};
+		0D6065A8047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_stars.c;
+			refType = 4;
+		};
+		0D6065A9047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = g_stroids.c;
+			refType = 4;
+		};
+		0D6065AA047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = game.h;
+			refType = 4;
+		};
+		0D6065AB047537C40D692D6D = {
+			children = (
+				0D6065AC047537C40D692D6D,
+				0D6065AD047537C40D692D6D,
+				0D6065AE047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = os_sdl;
+			path = /automount/home/anthony/stroids3d/os_sdl;
+			refType = 0;
+		};
+		0D6065AC047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = os_sdl_input.c;
+			refType = 4;
+		};
+		0D6065AD047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_sdl.h;
+			refType = 4;
+		};
+		0D6065AE047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = os_sdl.c;
+			refType = 4;
+		};
+		0D6065AF047537C40D692D6D = {
+			children = (
+				0D6065B0047537C40D692D6D,
+				0D6065B1047537C40D692D6D,
+				0D6065B2047537C40D692D6D,
+				0D6065B3047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = ren_gl;
+			path = /automount/home/anthony/stroids3d/ren_gl;
+			refType = 0;
+		};
+		0D6065B0047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = ren_draw.c;
+			refType = 4;
+		};
+		0D6065B1047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = ren_gl.c;
+			refType = 4;
+		};
+		0D6065B2047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = ren_gl.h;
+			refType = 4;
+		};
+		0D6065B3047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = ren_model.c;
+			refType = 4;
+		};
+		0D6065B4047537C40D692D6D = {
+			children = (
+				0D6065B5047537C40D692D6D,
+				0D6065B6047537C40D692D6D,
+				0D6065B7047537C40D692D6D,
+				0D6065B8047537C40D692D6D,
+				0D6065B9047537C40D692D6D,
+				0D6065BA047537C40D692D6D,
+				0D6065BB047537C40D692D6D,
+				0D6065BC047537C40D692D6D,
+				0D6065BD047537C40D692D6D,
+				0D6065BE047537C40D692D6D,
+				0D6065BF047537C40D692D6D,
+				0D6065C0047537C40D692D6D,
+				0D6065C1047537C40D692D6D,
+				0D6065C2047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = scommon;
+			path = /automount/home/anthony/stroids3d/scommon;
+			refType = 0;
+		};
+		0D6065B5047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = keys.c;
+			refType = 4;
+		};
+		0D6065B6047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = keys.h;
+			refType = 4;
+		};
+		0D6065B7047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = libtarga.c;
+			refType = 4;
+		};
+		0D6065B8047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = libtarga.h;
+			refType = 4;
+		};
+		0D6065B9047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = milkshape.c;
+			refType = 4;
+		};
+		0D6065BA047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = milkshape.h;
+			refType = 4;
+		};
+		0D6065BB047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = ren.h;
+			refType = 4;
+		};
+		0D6065BC047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_common.h;
+			refType = 4;
+		};
+		0D6065BD047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_math.c;
+			refType = 4;
+		};
+		0D6065BE047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_net.c;
+			refType = 4;
+		};
+		0D6065BF047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_net.h;
+			refType = 4;
+		};
+		0D6065C0047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = snd.h;
+			refType = 4;
+		};
+		0D6065C1047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = swap.c;
+			refType = 4;
+		};
+		0D6065C2047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = s_shared.h;
+			refType = 4;
+		};
+		0D6065C3047537C40D692D6D = {
+			children = (
+				0D6065C4047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = snd_sdl;
+			path = /automount/home/anthony/stroids3d/snd_sdl;
+			refType = 0;
+		};
+		0D6065C4047537C40D692D6D = {
+			isa = PBXFileReference;
+			path = sdl_sound.c;
+			refType = 4;
+		};
+		0D6065C5047537C40D692D6D = {
+			fileRef = 0D60659C047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065C6047537C40D692D6D = {
+			fileRef = 0D60659D047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065C7047537C40D692D6D = {
+			fileRef = 0D60659E047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065C8047537C40D692D6D = {
+			fileRef = 0D60659F047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065C9047537C40D692D6D = {
+			fileRef = 0D6065A0047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CA047537C40D692D6D = {
+			fileRef = 0D6065A1047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CB047537C40D692D6D = {
+			fileRef = 0D6065A2047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CC047537C40D692D6D = {
+			fileRef = 0D6065A3047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CD047537C40D692D6D = {
+			fileRef = 0D6065A4047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CE047537C40D692D6D = {
+			fileRef = 0D6065A5047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065CF047537C40D692D6D = {
+			fileRef = 0D6065A6047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D0047537C40D692D6D = {
+			fileRef = 0D6065A7047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D1047537C40D692D6D = {
+			fileRef = 0D6065A8047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D2047537C40D692D6D = {
+			fileRef = 0D6065A9047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D3047537C40D692D6D = {
+			fileRef = 0D6065AA047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D4047537C40D692D6D = {
+			fileRef = 0D6065AC047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D5047537C40D692D6D = {
+			fileRef = 0D6065AD047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D6047537C40D692D6D = {
+			fileRef = 0D6065AE047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D7047537C40D692D6D = {
+			fileRef = 0D6065B0047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D8047537C40D692D6D = {
+			fileRef = 0D6065B1047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065D9047537C40D692D6D = {
+			fileRef = 0D6065B2047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DA047537C40D692D6D = {
+			fileRef = 0D6065B3047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DB047537C40D692D6D = {
+			fileRef = 0D6065B5047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DC047537C40D692D6D = {
+			fileRef = 0D6065B6047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DD047537C40D692D6D = {
+			fileRef = 0D6065B7047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DE047537C40D692D6D = {
+			fileRef = 0D6065B8047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065DF047537C40D692D6D = {
+			fileRef = 0D6065B9047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E0047537C40D692D6D = {
+			fileRef = 0D6065BA047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E1047537C40D692D6D = {
+			fileRef = 0D6065BB047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E2047537C40D692D6D = {
+			fileRef = 0D6065BC047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E3047537C40D692D6D = {
+			fileRef = 0D6065BD047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E4047537C40D692D6D = {
+			fileRef = 0D6065BE047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E5047537C40D692D6D = {
+			fileRef = 0D6065BF047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E6047537C40D692D6D = {
+			fileRef = 0D6065C0047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E7047537C40D692D6D = {
+			fileRef = 0D6065C1047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E8047537C40D692D6D = {
+			fileRef = 0D6065C2047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065E9047537C40D692D6D = {
+			fileRef = 0D6065C4047537C40D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		0D6065EA047537EE0D692D6D = {
+			isa = PBXFrameworkReference;
+			name = OpenGL.framework;
+			path = /System/Library/Frameworks/OpenGL.framework;
+			refType = 0;
+		};
+		0D606600047537EE0D692D6D = {
+			fileRef = 0D6065EA047537EE0D692D6D;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//0D0
+//0D1
+//0D2
+//0D3
+//0D4
+//100
+//101
+//102
+//103
+//104
+		1058C7A0FEA54F0111CA2CBB = {
+			children = (
+				1058C7A1FEA54F0111CA2CBB,
+				0D6065EA047537EE0D692D6D,
+			);
+			isa = PBXGroup;
+			name = "Linked Frameworks";
+			refType = 4;
+		};
+		1058C7A1FEA54F0111CA2CBB = {
+			isa = PBXFrameworkReference;
+			name = Cocoa.framework;
+			path = /System/Library/Frameworks/Cocoa.framework;
+			refType = 0;
+		};
+		1058C7A2FEA54F0111CA2CBB = {
+			children = (
+				29B97325FDCFA39411CA2CEA,
+				29B97324FDCFA39411CA2CEA,
+			);
+			isa = PBXGroup;
+			name = "Other Frameworks";
+			refType = 4;
+		};
+		1058C7A3FEA54F0111CA2CBB = {
+			fileRef = 1058C7A1FEA54F0111CA2CBB;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+//100
+//101
+//102
+//103
+//104
+//170
+//171
+//172
+//173
+//174
+		17587328FF379C6511CA2CBB = {
+			isa = PBXApplicationReference;
+			path = stroids3d.app;
+			refType = 3;
+		};
+//170
+//171
+//172
+//173
+//174
+//190
+//191
+//192
+//193
+//194
+		19C28FACFE9D520D11CA2CBB = {
+			children = (
+				17587328FF379C6511CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Products;
+			refType = 4;
+		};
+//190
+//191
+//192
+//193
+//194
+//290
+//291
+//292
+//293
+//294
+		29B97313FDCFA39411CA2CEA = {
+			buildStyles = (
+				4A9504CCFFE6A4B311CA0CBA,
+				4A9504CDFFE6A4B311CA0CBA,
+			);
+			isa = PBXProject;
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			projectDirPath = "";
+			targets = (
+				29B97326FDCFA39411CA2CEA,
+			);
+		};
+		29B97314FDCFA39411CA2CEA = {
+			children = (
+				080E96DDFE201D6D7F000001,
+				29B97315FDCFA39411CA2CEA,
+				29B97317FDCFA39411CA2CEA,
+				29B97323FDCFA39411CA2CEA,
+				19C28FACFE9D520D11CA2CBB,
+			);
+			isa = PBXGroup;
+			name = "SDL App";
+			path = "";
+			refType = 4;
+		};
+		29B97315FDCFA39411CA2CEA = {
+			children = (
+				0D60659B047537C40D692D6D,
+				0D6065AB047537C40D692D6D,
+				0D6065AF047537C40D692D6D,
+				0D6065B4047537C40D692D6D,
+				0D6065C3047537C40D692D6D,
+			);
+			isa = PBXGroup;
+			name = "Other Sources";
+			path = "";
+			refType = 4;
+		};
+		29B97317FDCFA39411CA2CEA = {
+			children = (
+				089C165CFE840E0CC02AAC07,
+			);
+			isa = PBXGroup;
+			name = Resources;
+			path = "";
+			refType = 4;
+		};
+		29B97323FDCFA39411CA2CEA = {
+			children = (
+				1058C7A0FEA54F0111CA2CBB,
+				1058C7A2FEA54F0111CA2CBB,
+			);
+			isa = PBXGroup;
+			name = Frameworks;
+			path = "";
+			refType = 4;
+		};
+		29B97324FDCFA39411CA2CEA = {
+			isa = PBXFrameworkReference;
+			name = AppKit.framework;
+			path = /System/Library/Frameworks/AppKit.framework;
+			refType = 0;
+		};
+		29B97325FDCFA39411CA2CEA = {
+			isa = PBXFrameworkReference;
+			name = Foundation.framework;
+			path = /System/Library/Frameworks/Foundation.framework;
+			refType = 0;
+		};
+		29B97326FDCFA39411CA2CEA = {
+			buildPhases = (
+				29B97327FDCFA39411CA2CEA,
+				29B97328FDCFA39411CA2CEA,
+				29B9732BFDCFA39411CA2CEA,
+				29B9732DFDCFA39411CA2CEA,
+			);
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks\" \"$(SYSTEM_LIBRARY_DIR)/Frameworks/OpenGL.framework\"";
+				HEADER_SEARCH_PATHS = "\"$(HOME)/Library/Frameworks/SDL.framework/Headers\" \"$(HOME)/Library/Frameworks/SDL_mixer.framework/Headers\" \"$(SYSTEM_LIBRARY_DIR)/Frameworks/OpenGL.framework/Headers\"";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-framework SDL -framework SDL_mixer -framework OpenGL";
+				PRODUCT_NAME = stroids3d;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wmost -Wno-four-char-constants -Wno-unknown-pragmas";
+				WRAPPER_EXTENSION = app;
+			};
+			dependencies = (
+			);
+			isa = PBXApplicationTarget;
+			name = stroids3d;
+			productName = "SDL App";
+			productReference = 17587328FF379C6511CA2CBB;
+			productSettingsXML = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<!DOCTYPE plist PUBLIC \"-//Apple Computer//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">
+<plist version=\"1.0\">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>stroids3d</string>
+	<key>CFBundleIconFile</key>
+	<string></string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>0.1</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>
+";
+			shouldUseHeadermap = 1;
+		};
+		29B97327FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A47AA101A0483001D3D55B,
+				0D6065D3047537C40D692D6D,
+				0D6065D5047537C40D692D6D,
+				0D6065D9047537C40D692D6D,
+				0D6065DC047537C40D692D6D,
+				0D6065DE047537C40D692D6D,
+				0D6065E0047537C40D692D6D,
+				0D6065E1047537C40D692D6D,
+				0D6065E2047537C40D692D6D,
+				0D6065E5047537C40D692D6D,
+				0D6065E6047537C40D692D6D,
+				0D6065E8047537C40D692D6D,
+			);
+			isa = PBXHeadersBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B97328FDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				089C165EFE840E0CC02AAC07,
+			);
+			isa = PBXResourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732BFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				F5A47AA301A0483001D3D55B,
+				0D6065C5047537C40D692D6D,
+				0D6065C6047537C40D692D6D,
+				0D6065C7047537C40D692D6D,
+				0D6065C8047537C40D692D6D,
+				0D6065C9047537C40D692D6D,
+				0D6065CA047537C40D692D6D,
+				0D6065CB047537C40D692D6D,
+				0D6065CC047537C40D692D6D,
+				0D6065CD047537C40D692D6D,
+				0D6065CE047537C40D692D6D,
+				0D6065CF047537C40D692D6D,
+				0D6065D0047537C40D692D6D,
+				0D6065D1047537C40D692D6D,
+				0D6065D2047537C40D692D6D,
+				0D6065D4047537C40D692D6D,
+				0D6065D6047537C40D692D6D,
+				0D6065D7047537C40D692D6D,
+				0D6065D8047537C40D692D6D,
+				0D6065DA047537C40D692D6D,
+				0D6065DB047537C40D692D6D,
+				0D6065DD047537C40D692D6D,
+				0D6065DF047537C40D692D6D,
+				0D6065E3047537C40D692D6D,
+				0D6065E4047537C40D692D6D,
+				0D6065E7047537C40D692D6D,
+				0D6065E9047537C40D692D6D,
+			);
+			isa = PBXSourcesBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29B9732DFDCFA39411CA2CEA = {
+			buildActionMask = 2147483647;
+			files = (
+				1058C7A3FEA54F0111CA2CBB,
+				0D606600047537EE0D692D6D,
+			);
+			isa = PBXFrameworksBuildPhase;
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+//290
+//291
+//292
+//293
+//294
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+		4A9504CCFFE6A4B311CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OPTIMIZATION_CFLAGS = "-O0";
+			};
+			isa = PBXBuildStyle;
+			name = Development;
+		};
+		4A9504CDFFE6A4B311CA0CBA = {
+			buildRules = (
+			);
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			isa = PBXBuildStyle;
+			name = Deployment;
+		};
+//4A0
+//4A1
+//4A2
+//4A3
+//4A4
+//F50
+//F51
+//F52
+//F53
+//F54
+		F5A47A9D01A0482F01D3D55B = {
+			isa = PBXFileReference;
+			path = SDLMain.h;
+			refType = 2;
+		};
+		F5A47A9E01A0483001D3D55B = {
+			isa = PBXFileReference;
+			path = SDLMain.m;
+			refType = 2;
+		};
+		F5A47AA101A0483001D3D55B = {
+			fileRef = F5A47A9D01A0482F01D3D55B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+		F5A47AA301A0483001D3D55B = {
+			fileRef = F5A47A9E01A0483001D3D55B;
+			isa = PBXBuildFile;
+			settings = {
+			};
+		};
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA;
+}

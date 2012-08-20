@@ -1,0 +1,9 @@
+-Descent Style Movement
+-Faster Particle Drawing
+-MouseWheel support
+-Stroids Monster
++better collision detection
+-MultiTexture
+-Lighting Effects
+-More Weapons
+-Game Winning Condition
