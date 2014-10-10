@@ -4,8 +4,13 @@
 #define GL_BGRA	0x80E1
 #endif
 
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#else
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
 #include "../game/game.h"
 
 extern plane_t frustum[6];

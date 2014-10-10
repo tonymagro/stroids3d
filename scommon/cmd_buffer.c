@@ -1,9 +1,9 @@
 #include "s_shared.h"
 
-sboolean		wait;	// Wait until next frame to execute buffer
+static sboolean		s_wait;	// Wait until next frame to execute buffer
 void Cmd_fWait( void )
 {
-	wait = True;
+	s_wait = True;
 }
 
 
@@ -111,9 +111,9 @@ void Cbuf_Exec( void )
 
 		Cmd_ExecuteString( line );
 
-		if( wait )
+		if( s_wait )
 		{
-			wait = False;
+			s_wait = False;
 			break;
 		}
 	}

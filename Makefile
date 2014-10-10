@@ -22,7 +22,12 @@ CC = gcc
 CFLAGS = $(GPROF_OPTS) -g -O2 `sdl-config --cflags`
 LDFLAGS = $(GPROF_OPTS)
 
+UNAME=$(shell uname)
+ifeq ($(findstring Darwin, $(UNAME)), Darwin)
+LIBS =  -framework OpenGL -L/usr/local/lib `sdl-config --libs` -lSDL_mixer
+else
 LIBS = -lGL -lGLU `sdl-config --libs` -lSDL_mixer
+endif
 
 GAME     = game/g_particles.c game/g_player.c game/g_stroids.c game/g_stars.c \
            scommon/s_shared.c scommon/command.c scommon/buffer.c scommon/s_common.c \

@@ -6,7 +6,7 @@
 /* this is all stuff for the malloc instrumenting stuff */
 /* i may want to do a full malloc implementation later, either based on
    malloc or using the underlying syscall to get more mem */
-#define HASH_KEEP_BITS   (16) 
+#define HASH_KEEP_BITS   (16)
 #define HASH_SIZE        (1 << HASH_KEEP_BITS)
 #define HASH_IGNORE_BITS (2)
 #define HASH_MASK        (~(0xFFFFFFFF << (HASH_IGNORE_BITS + HASH_KEEP_BITS)))
@@ -15,7 +15,7 @@
 #define MAX_MEM_FILE    (128)
 
 typedef struct _hashnode_t {
-    unsigned int pointer;
+    unsigned long long pointer;
     unsigned int size;
     unsigned int line;
     char file[MAX_MEM_FILE];
@@ -58,29 +58,29 @@ static void hash_insert( void * ptr, unsigned int size, unsigned int line, const
     } else {
 
         h = MemHash[hashpos];
-        
+
         /* collision */
         ++Collisions;
-        
+
         // march down the linked list until the end.
         while( h->next != NULL ) {
             h = h->next;
         }
-        
+
         // allocate a new node on the end.
         h->next = malloc( sizeof( hashnode_t ) );
         if( h->next == NULL ) {
             OS_Error( 1, "out of memory!\n" );
         }
-        
+
         // move to node we just created
         h = h->next;
-        
+
         // make sure this terminates the list.
         h->next = NULL;
     }
 
-    h->pointer = (unsigned int)ptr;
+    h->pointer = (unsigned long long)ptr;
     h->line = line;
     h->size = size;
     strncpy( h->file, fname, MAX_MEM_FILE );
@@ -113,7 +113,7 @@ static void hash_remove( void * ptr ) {
         return;
     }
 
-    while( h->pointer != (unsigned int)ptr ) {
+    while( h->pointer != (unsigned long long)ptr ) {
         if( h->next == NULL ) {
             // wrong again -- freeing a pointer never hashed
             OS_Error( 1, "tried to a free an unallocated pointer\n" );
@@ -165,7 +165,7 @@ static hashnode_t * hash_lookup( void * ptr ) {
 
     h = MemHash[hashpos];
 
-    while( h->pointer != (unsigned int)ptr ) {
+    while( h->pointer != (unsigned long long)ptr ) {
         if( h->next == NULL ) {
             // again, never allocated
             return( NULL );
@@ -256,11 +256,11 @@ void mem_swap_in( unsigned int size, unsigned char * buf ) {
         save_byte = buf[index];
         buf[index] = index & 0xFF;
         buf[index] = save_byte;
-        
+
         save_byte = buf[index>>1];
         buf[index>>1] = index & 0xFF;
         buf[index>>1] = save_byte;
-        
+
         save_byte = buf[index>>3];
         buf[index>>3] = index & 0xFF;
         buf[index>>3] = save_byte;
@@ -311,22 +311,22 @@ void mem_shutdown() {
 	printf( "MEMORY: Shutting Down - %i bytes allocated from %i allocs\n", mem_malloc_bytes(), mem_malloc_number() );
 
     if( TotalBytes || TotalAllocs ) {
-        sprintf( msgbuf, 
+        sprintf( msgbuf,
             "Leaked %d bytes of memory with %d unfreed allocations!",
             TotalBytes, TotalAllocs );
         printf( "%s\n", msgbuf );
 
-        printf( "Memory Leaked!\n", msgbuf );
+        printf( "Memory Leaked!\n" );
 
         // print out some more meaningful things to the console.
-        
+
         printf( "Unfreed Memory\n---------------\n" );
         for( i = 0; i < HASH_SIZE; i++ ) {
             if( (MemHash[i] != NULL) ) {
                 h = MemHash[i];
                 while( h != NULL ) {
                     printf( "Pointer 0x%X with %d bytes @ line %d in %s\n",
-                        h->pointer, h->size, h->line, h->file );
+                        (unsigned int)h->pointer, h->size, h->line, h->file );
                     h = h->next;
                     if( ++count >= 32 ) {
                         return;
